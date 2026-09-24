@@ -1,5 +1,12 @@
 # Telegram Order Forwarder
 
+## Ayra Aris receipt support (v4)
+
+Online Transfer order text is copied as before. The next Wabot JPEG, PNG, or
+PDF is copied to the target group as a reply to that order, allowing n8n to
+attach the receipt to the correct WooCommerce order. Pending receipt matches
+expire after `RECEIPT_TTL_SECONDS` (default: 7200 seconds).
+
 Userbot (Telethon) that copies bot order messages from one Telegram group to another as normal user messages. Telegram Bot API bots cannot see messages sent by other bots, so an order bot's posts are invisible to trigger bots. This forwarder bridges that gap.
 
 ## How it works
